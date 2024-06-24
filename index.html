@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmraiFrams</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button type="button" class="btnScrollToTop" onclick="scrollToTopFunction()"><i
+      class="fa-solid fa-arrow-up"></i></button>
+  <!-- home page -->
+  <div id="home" class="landingPage">
+    <!-- Logo -->
+    <div id="header">
+      <div class="logo">
+        <img src="/amrai logo.png">
+      </div>
+      <div class="name">
+        <h1>AMRAI FARMS</h1>
+      </div>
+      <div class="logo2">
+        <img src="/amrai logo.png">
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" style="background-color: aliceblue;" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse sticky-top navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#home">HOME</a>
+            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#gallary">GALLERY</a>
+            <a class="nav-link" href="#Aminities">AMINITIES</a>
+            <a class="nav-link" href="#destination">DESTINATION</a>
+            <a class="nav-link" href="#nearby">NEAR BY PLACE</a>
+            <a class="nav-link" href="#contactUs">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home image -->
+    <div id="mainImg">
+      <img src="/HomeMainImage.png" alt="">
+    </div>
+  </div>
+
+
+  <!-- about page -->
+  <div id="about">
+    <div class="aboutHeading">
+      <h2>ABOUT</h2>
+    </div>
+    <div class="leftImg">
+      <img src="/newabout.png">
+      <div class="text">
+        <p>The backdrop of the Jam Gatethe gateway of the historic plateaus of Malwa and the plains of Nimar located in
+          Madhya Pradesh, India."Amari farm stay" majestically stands out in a mountainous backdrop giving a view of
+          the lush green forest Amrai Farmstay is spread over an area of 2 acres. Guests can look forward to nature
+          walks, treks through natural landscapes, enjoy a cool breeze with an amazing sunset or sunrise while having
+          some snacks from local food stalls at jaam gate, or just relaxing in the lap of nature at the fully equipped
+          farm-stay itself.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- gallary page -->
+  <div id="gallary">
+    <div class="gallaryName">
+      <h2>GALLERY</h2>
+    </div>
+    <div class="full-img" id="fullimgbox">
+      <img src="/DSC00976.JPG" alt="" id="fullimg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      <img src="/IMG-20240512-WA0018.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0016.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0014.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0015.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0022.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0021.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0027.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0025.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0033.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="/IMG-20240512-WA0026.jpg" alt="" onclick="openFullImg(this.src)">
+    </div>
+  </div>
+
+
+
+  <!-- Aminities page -->
+  <div id="Aminities">
+    <div class="AminitiesName">
+      <h2>AMENITIES</h2>
+    </div>
+    <table>
+      <tr>
+        <td id="AminitiesImg" class="IL"><img src="/bedRoom.png" alt=""></td>
+        <td id="ammText" class="TR">
+          <p>Plush King-Sized Bed: Drift into a peaceful sleep on our plush, high-thread-count linens and premium mattress. Step into a world of comfort and elegance in our exquisitely designed bedroom</p>
+        </td>
+      </tr>
+      <tr>
+        <td id="ammText" class="TL">
+          <p>Our beautifully designed hall offers a comfortable and inviting atmosphere, perfect for any gathering or event. Featuring a spacious layout with plush sofas, the hall provides a stylish setting where you can relax and socialize.</p>
+        </td>
+        <td id="AminitiesImg" class="IR"><img src="/sofa.png" alt=""></td>
+      </tr>
+      <tr>
+        <td id="AminitiesImg" class="IL"><img src="/outdoorSitting.png" alt=""></td>
+        <td id="ammText" class="TR">
+          <p>Nestled amidst lush greenery, this tranquil area offers comfortable seating with elegantly arranged chairs, perfect for unwinding with a book, enjoying a cup of coffee, or engaging in delightful conversations. Our garden is meticulously maintained to provide a peaceful retreat where you can connect with nature and savor moments of calm.</p>
+        </td>
+      </tr>
+      <tr>
+        <td id="ammText" class="TL">
+          <p>Designed for ultimate relaxation, our bathtub provides a tranquil sanctuary where you can unwind and let the stress of the day melt away. The spacious design accommodates full-body immersion, allowing you to soak comfortably in warm, soothing water.</p>
+        </td>
+        <td id="AminitiesImg" class="IR"><img src="/DSC01059.JPG" alt=""></td>
+      </tr>
+      <tr>
+        <td id="AminitiesImg" class="IL"><img src="/nature.png" alt=""></td>
+        <td id="ammText" class="TR">
+          <p>Welcome to our serene field of flowers and greenery, a perfect retreat for nature lovers and outdoor enthusiasts. Here, you will find a harmonious blend of vibrant blooms and lush landscapes, designed to offer you a peaceful and rejuvenating experience.</p>
+        </td>
+      </tr>
+      <tr>
+        <td id="ammText" class="TL">
+          <p>Welcome to our state-of-the-art playground, designed to spark joy and adventure for children of all ages. Nestled in a safe and welcoming environment, our playground offers a variety of amenities to ensure a fun-filled experience.</p>
+        </td>
+        <td id="AminitiesImg" class="IR"><img src="/slides.png" alt=""></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <!-- map -->
+  <div id="destination">
+    <div class="destinationName">
+      <h2>DESTINATION</h2>
+    </div>
+    <div class="map-area">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30607.3581377898!2d75.7040516274776!3d22.380275649548768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f5a5c700e11f%3A0x7d4ad462ade87d3f!2sAmrai%20Farms%2C%20Jam%20Gate!5e1!3m2!1sen!2sin!4v1715965540747!5m2!1sen!2sin"
+        width="100%" height="600px" style="border-radius: 25px ; padding: 20px;" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+
+
+  <!-- near by place page -->
+
+  <div id="nearby">
+    <div class="nearbyName">
+      <h2>NEAR BY PLACES</h2>
+    </div>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/Patalpani_Waterfalls.jpg" class="card-img-top" alt="place 1">
+            <div class="card-body">
+              <h5 class="card-title">PATAL PANI</h5>
+              <p class="card-text">The Patalpani Waterfall is a waterfall on the Choral River, a tributary of the
+                Narmada, located in the Mhow Tehsil of Indore district in the state of Madhya Pradesh, India.</p>
+              <p class="card-text"><small class="text-body-secondary">33 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com/search?q=patal+pani&rlz=1C1ONGR_enIN1097IN1097&oq=PATAL+PANI&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyDwgEEC4YChivARjHARiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzY1M2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/Jamgate.jpg" class="card-img-top" alt="place 2">
+            <div class="card-body">
+              <h5 class="card-title">JAM GATE</h5>
+              <p class="card-text">Jam Gate, located in Maheshwar Tehsil, Khargone District, Madhya Pradesh, India, is a
+                popular picnic spot situated along the Mhow-Mandleshwar Road ,attracting many visitors annually.</p>
+              <p class="card-text"><small class="text-body-secondary">1.9 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com/search?q=jam+gate&rlz=1C1ONGR_enIN1097IN1097&oq=JAM+GATE&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYrwEYxwEYsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgASoAgCwAgA&sourceid=chrome&ie=UTF-8" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/bamniya kund.jpg" class="card-img-top" alt="place 3">
+            <div class="card-body">
+              <h5 class="card-title">BHAMNIYA KUND</h5>
+              <p class="card-text">Bamniya Kund is a captivating waterfall 50 kms from Indore in Madhya Pradesh. Falling
+                from a height of 300 feet, the waters gush down creating a colourful pool of clear </p>
+              <p class="card-text"><small class="text-body-secondary">22.4 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com/search?q=BHAMNIYA+KUND&rlz=1C1ONGR_enIN1097IN1097&oq=BHAMNIYA+KUND&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIPCAEQLhgNGK8BGMcBGIAEMgkIAhAAGA0YgAQyCQgDEAAYDRiABDIICAQQABgNGB4yCggFEAAYDRgPGB4yCggGEAAYDRgPGB4yCAgHEAAYDRgeMgoICBAAGIAEGKIE0gEHODM3ajBqOagCALACAA&sourceid=chrome&ie=UTF-8" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/shitla mata watrfall.jpg" class="card-img-top" alt="place 4">
+            <div class="card-body">
+              <h5 class="card-title">SHEETLA MATA</h5>
+              <p class="card-text">Located 55 km from Indore Junction, Sheetla Mata or Sitlamata Waterfall is a
+                beautiful cascade in Rampuriya Bujrg village near Indore, attracting numerous visitors annually for its
+                scenic beauty</p>
+              <p class="card-text"><small class="text-body-secondary">23 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com/search?q=sheetla+mata+waterfall&sca_esv=3f074e5da93b5e88&sca_upv=1&rlz=1C1ONGR_enIN1097IN1097&sxsrf=ADLYWIJuxc2GXd8AjNa9b8-zyuHZs_UVyw%3A1717422947688&ei=Y8tdZuHKKY3UseMPuoq9yA8&oq=SHITLA+MATA+w&gs_lp=Egxnd3Mtd2l6LXNlcnAiDVNISVRMQSBNQVRBIHcqAggAMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMgoQABiABBgCGMsBMgoQABiABBgCGMsBMgoQABiABBgCGMsBMgsQABiABBiRAhiKBTIHEAAYgAQYCjIKEAAYgAQYAhjLATINEC4YgAQYxwEYChivAUiVIFCQCVjCDXABeACQAQCYAdUBoAHtBKoBBTAuMS4yuAEDyAEA-AEBmAIDoAK4A8ICChAAGLADGNYEGEfCAg0QABiwAxjWBBhHGMkDwgIOEAAYgAQYsAMYkgMYigXCAhAQLhiABBgCGMcBGMsBGK8BwgIKEC4YgAQYAhjLAZgDAIgGAZAGCpIHBTEuMC4yoAe7IQ&sclient=gws-wiz-serp" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/wanchoo point.jpg" class="card-img-top" alt="place 5">
+            <div class="card-body">
+              <h5 class="card-title">WANCHOO POINT</h5>
+              <p class="card-text">A view of beautiful Wanchoo Point near Indore. It's really difficult to capture it's
+                beauty in camera as seen by the eyes. The structure of the main mountain really looks very unique one.
+              </p>
+              <p class="card-text"><small class="text-body-secondary">17.1 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com.pk/travel/hotels/entity/ChoI5vTJr9eho5iEARoNL2cvMTFmeGI4ZjZ4MRAE?utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwigmYizy7-GAxUAAAAAHQAAAAAQBA&ts=CAEaBAoCGgAqBAoAGgA" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/khodra mahadev ki gufa.jpg" class="card-img-top" alt="place 6">
+            <div class="card-body">
+              <h5 class="card-title">KHODRA MAHADEV</h5>
+              <p class="card-text">Mahadev Khodra Cave, near Janapav, the birthplace of Lord Parshuram, is known as
+                Chota Amarnath in Madhya Pradesh. This site attracts many visitors annually for its spiritual
+                significance.</p>
+              <p class="card-text"><small class="text-body-secondary">7.8 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com/search?q=KHODRA+MAHADEV&rlz=1C1ONGR_enIN1097IN1097&oq=KHODRA+MAHADEV&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQLhivARjHARiABDIHCAIQLhiABDIICAMQABgWGB4yCAgEEAAYFhgeMgoIBRAAGIAEGKIEMgoIBhAAGIAEGKIE0gEHNjI2ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/choral dam.jpg" class="card-img-top" alt="place 7">
+            <div class="card-body">
+              <h5 class="card-title">CHORAL DAM</h5>
+              <p class="card-text">The dam, though small, features a serene lake ideal for leisurely activities. Boating
+                is a favored option, attracting visitors seeking relaxation, recreation, and tranquil moments amidst
+                nature's beauty.</p>
+              <p class="card-text"><small class="text-body-secondary">13.2 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com.pk/travel/hotels/entity/ChoIkf355qDzoe65ARoNL2cvMTFmMHdmemRxNhAE?utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjo9fLky7-GAxUAAAAAHQAAAAAQAw&ts=CAEaBAoCGgAqBAoAGgA" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding: 10px;">
+          <div class="card">
+            <img style="height: 198px;" src="/tincha-falls.jpg" class="card-img-top" alt="place 8">
+            <div class="card-body">
+              <h5 class="card-title">TINCHA WATERFALL</h5>
+              <p class="card-text">Water flow peaks post-rainy season (typically after July), dwindling to a trickle in
+                summer, offering contrasting views throughout the year, attracting visitors to witness nature's dynamic
+                spectacle.</p>
+              <p class="card-text"><small class="text-body-secondary">55.4 Km form Amrai Farms</small></p>
+              <a href="https://www.google.com.np/travel/entity/key/ChkIhZui9s_XtMheGg0vZy8xMXBjbjlmMHBsEAQ?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaBAoCGgAqBAoAGgA&sa=X&ap=MAA&ved=0CAAQ5JsGahcKEwig3pD8y7-GAxUAAAAAHQAAAAAQBA" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- contact us page -->
+  <div id="contactUs">
+    <div class="left">
+      <div class="contactName">
+        <h2>AMRAI FARMS</h2>
+      </div>
+      <div class="contactIcons">
+        <a href="..."><i class="fa-brands fa-facebook"></i></a>
+        <a href="..."><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="tel: +91 xxxxxxxxxx"><i class="fa-solid fa-phone"></i></a>
+      </div>
+      <div class="gmail">
+        <a href="...">gmail here</a>
+      </div>
+      <div id="madeby">
+        <p>Made By @Nay_dan</p>
+      </div>
+      <div class="copyRight">
+        <p>copyright@2024&nbsp;&nbsp;</p>
+        <p>All Rights Reserved&nbsp;&nbsp;</p>
+        <p>Privacy Policy&nbsp;&nbsp;</p>
+      </div>
+    </div>
+
+    <!-- querry form -->
+
+    <div class="right">
+      <div style="text-align: center;" class="container mt-5">
+        <h2 style="text-align: center; color: aliceblue; font-size: 50px;" class="mb-4">Query Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label><br>
+            <input type="text" class="form-control-lg" id="username" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label><br>
+            <input type="password" class="form-control-lg" id="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="gmail">Gmail</label><br>
+            <input type="email" class="form-control-lg" id="gmail" placeholder="Enter Gmail">
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile No.</label><br>
+            <input type="tel" class="form-control-lg" id="mobile" placeholder="Enter mobile number">
+          </div>
+          <div class="form-group">
+            <label for="query">Query</label><br>
+            <textarea class="form-control-lg" id="query" rows="3" placeholder="Enter your query"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    var fullimgbox = document.getElementById("fullimgbox");
+    var fullimg = document.getElementById("fullimg");
+    function openFullImg(pic) {
+      fullimgbox.style.display = "flex";
+      fullimg.src = pic;
+    }
+    function closeFullImg() {
+      fullimgbox.style.display = "none";
+    }
+
+
+
+
+
+    //Get the button
+    var mybutton = document.getElementById("scrollToTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function scrollToTopFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+</html>
